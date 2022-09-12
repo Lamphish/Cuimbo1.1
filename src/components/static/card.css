@@ -1,0 +1,27 @@
+.body__inner {
+    position: relative;
+    top: 6vh;
+    width: 95vw;
+    height: 75vh;
+    max-width: 1638px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 780px) {
+    .body__inner {
+        flex-direction: column;
+        flex-wrap: initial;
+        height: fit-content;
+        width: 90vw;
+        align-items: center;
+    }
+    #about{
+        width: initial;
+    }
+    #aboutIMG{
+        height: 30vh
+    }
+}

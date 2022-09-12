@@ -1,0 +1,33 @@
+h1 {
+    margin: 0;
+}
+.header__inner {
+    position: relative;
+    width: 90vw;
+    height: 8vh;
+    max-width: 1638px;
+    top: 3vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__inner::after {
+    content: '';
+    position: absolute;
+    width: 98vw;
+    max-width: 1820px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(255,168,96,1) 0%, rgba(93,102,255,1) 100%);
+    z-index: -1;
+    transition: all ease 0ms;
+    transition-duration: 1s;
+}
+.header__inner:hover::after {
+    width: 90vw;
+}
+.bar {
+   display: none;
+}
