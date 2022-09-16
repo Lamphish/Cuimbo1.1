@@ -1,5 +1,7 @@
 import React from 'react';
-import createCircle from './scripts/newElement';
+//scripts
+import createCircle from './scripts/speedDialHandler'; 
+//material ui
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
@@ -7,6 +9,7 @@ import Brightness1OutlinedIcon from '@mui/icons-material/Brightness1Outlined';
 import CropSquareOutlinedIcon from '@mui/icons-material/CropSquareOutlined';
 import ChangeHistoryOutlinedIcon from '@mui/icons-material/ChangeHistoryOutlined';
 import './static/playground.css';
+import drawCircle from './scripts/pencil/drawCircle';
 
 const actions = [
   { icon: <Brightness1OutlinedIcon />, name: 'Circle'},
@@ -28,7 +31,7 @@ export default function playground() {
             key={action.name}
             icon={action.icon}
             tooltipTitle={action.name}
-            onClick={() => {createCircle()}}
+            onClick={() => {drawCircle()}}
           />
         ))}
       </SpeedDial>
